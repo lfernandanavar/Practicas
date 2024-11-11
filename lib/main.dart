@@ -90,7 +90,7 @@ class HomePage extends StatelessWidget {
                         onPressed: (){
                           Navigator.push(context, MaterialPageRoute(builder: (context) => SignupPage()));
                         }, 
-                        color: Colors.redAccent,
+                        color:Colors.redAccent ,
                         elevation: 0,
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(50),

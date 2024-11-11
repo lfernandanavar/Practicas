@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart'; // Import para SystemUiOverlayStyle
+import 'package:flutter/services.dart';
+import 'package:practicas/menu_inferior.dart';
+import 'package:practicas/perfil.dart'; // Import para SystemUiOverlayStyle
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -70,7 +72,9 @@ class LoginPage extends StatelessWidget {
                           child:   MaterialButton(
                           minWidth: double.infinity,
                           height: 60,
-                          onPressed: (){}, 
+                          onPressed: (){
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => MenuInferior()));
+                          }, 
                           color: Colors.redAccent,
                           elevation: 0,
                           shape: RoundedRectangleBorder(
